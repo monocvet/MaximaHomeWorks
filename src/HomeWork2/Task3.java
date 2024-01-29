@@ -13,9 +13,9 @@ public class Task3 {
     int masha = 67760;
     int denis = 83690;
     int kristina = 76230;
-    double newCashMasha = (int)(masha * 1.1);
-    double newCashDenis = (int)(denis * 1.1);
-    double newCashKristina = (int)(kristina * 1.1);
+    double newCashMasha = masha * 1.1;
+    double newCashDenis = denis * 1.1;
+    double newCashKristina = kristina * 1.1;
         System.out.println("Маша теперь получает: " + newCashMasha + " рублей. Годовой доход вырос на: " + (newCashMasha - masha) * 12 + "  рублей");
         System.out.println("Денис теперь получает: " + newCashDenis + " рублей. Годовой доход вырос на: " + (newCashDenis - denis) * 12 + "  рублей");
         System.out.println("Кристина теперь получает: " + newCashKristina + " рублей. Годовой доход вырос на: " + (newCashKristina - kristina) * 12 + "  рублей");

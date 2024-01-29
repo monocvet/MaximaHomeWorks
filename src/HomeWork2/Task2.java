@@ -9,9 +9,9 @@ public class Task2 {
     public static void main(String[] args) {
         int paintWhiteForOneClass = 2;
         int paintBrownForOneClass = 4;
-        int countClasses = 120 / (paintWhiteForOneClass + paintBrownForOneClass);
-        int paintWhiteFull = paintWhiteForOneClass * countClasses;
-        int paintBrownFull = paintBrownForOneClass * countClasses;
+        double countClasses = (double) 120 / (paintWhiteForOneClass + paintBrownForOneClass);
+        double paintWhiteFull = paintWhiteForOneClass * countClasses;
+        double paintBrownFull = paintBrownForOneClass * countClasses;
         System.out.println("В школе, где " + countClasses + " классов, нужно " + paintWhiteFull +
                 " банок белой краски и " + paintBrownFull + " банок коричневой краски.");
     }
