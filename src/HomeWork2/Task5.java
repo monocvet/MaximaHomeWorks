@@ -8,14 +8,13 @@ public class Task5 {
      */
     public static void main(String[] args) {
         int monthNumber = 11;
-        String season;
-        switch (monthNumber) {
-            case 12, 1, 2 -> season = "Сезон: Зима";
-            case 3, 4, 5 -> season = "Сезон: Весна";
-            case 6, 7, 8 -> season = "Сезон: Лето";
-            case 9, 10, 11 -> season = "Сезон: Осень";
-            default -> season = "Такого месяца не существует!";
-        }
+        String season = switch (monthNumber) {
+            case 12, 1, 2 -> "Сезон: Зима";
+            case 3, 4, 5 ->  "Сезон: Весна";
+            case 6, 7, 8 -> "Сезон: Лето";
+            case 9, 10, 11 ->  "Сезон: Осень";
+            default -> "Такого месяца не существует!";
+        };
         System.out.println(season);
     }
 }
